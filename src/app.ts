@@ -20,7 +20,7 @@ interface ICustomer {
 // INTERFACE IPRODUCTIONPROCESS
 interface IProductionProcess {
     processName: string;
-    descriptio: string;
+    description: string;
     productsInProcess: string[];
     addProduct(product: IProduct): void;
 };
