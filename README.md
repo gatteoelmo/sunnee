@@ -28,17 +28,18 @@ The Sunnee Beachwear Management System is a **TypeScript-based** project designe
 ## Example Code
 
 ```typescript
-const swimsuitRelax = new Product('Swimsuit Relax', 1000, 'S', 'blue', true);
-const john = new Customer('John', 'Doe', 'johndoe@gmail', 'Visa');
+const swimsuitRelax = new Product("Swimsuit Relax", 1000, "S", "blue", true);
+const john = new Customer("John", "Doe", "johndoe@gmail", "Visa");
 john.orderProduct(swimsuitRelax);
 
 const netsConversion = new ProductionProcess(
-  'Nets Conversion',
-  'Fishing nets are turned into plastic pellets and used to create swimwear.',
+  "Nets Conversion",
+  "Fishing nets are turned into plastic pellets and used to create swimwear.",
   []
 );
 netsConversion.addProduct(swimsuitRelax);
 netsConversion.explainProcess();
+```
 
 ## How It Works
 
@@ -59,6 +60,5 @@ This project is licensed under the MIT License.
 ## Contact
 
 For more information, feel free to contact me at:
-- www.linkedin.com/in/matteo-gallardo-091562285
 
-```
+- www.linkedin.com/in/matteo-gallardo-091562285
