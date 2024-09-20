@@ -58,6 +58,7 @@ var swimsuitActive = new Product('Swimsuit Active', 2000, 'M', 'blue', true);
 var bikiniActive = new Product('Bikini Active', 2100, 'L', 'blue', true);
 var swimsuitExtreme = new Product('Swimsuit Extreme', 3000, 'M', 'blue', true);
 var bikiniExtreme = new Product('Bikini Extreme', 3100, 'S', 'blue', true);
+// NEXT SEASON
 var childswimsuitRelax = new Product('Swimsuit Extreme', 3000, 'M', 'blue', false);
 var childswimsuitActive = new Product('Swimsuit Extreme', 3000, 'M', 'blue', false);
 var childswimsuitExtreme = new Product('Swimsuit Extreme', 3000, 'M', 'blue', false);
@@ -70,14 +71,14 @@ var maria = new Customer('Maria', 'Gonzalez', 'maria@gmail', 'Mastercard');
 var fred = new Customer('Fred', 'Flinstone', 'fred@gmail', 'Visa');
 var manny = new Customer('Manny', 'Machado', 'manny@gmail', 'Visa');
 // PRODUCTION PROCESS
-var netsConversion = new ProductionProcess('Nets Conversion', 'Fishing nets are collected and cleaned, then turned into plastic pellets. These pellets are used to make fabric, which is then used to create swimwear. This process helps reduce plastic waste and promotes environmental sustainability.', ['Swimsuit Relax', 'Swimsuit Active', 'Swimsuit Extreme']);
+var netsConversion = new ProductionProcess('Nets Conversion', 'Fishing nets are collected and cleaned, then turned into plastic pellets. These pellets are used to make fabric, which is then used to create swimwear. This process helps reduce plastic waste and promotes environmental sustainability.', ['Swetsuit Relax', 'Swetsuit Active', 'Swetsuit Extreme']);
 // ORDERS
 matteo.orderProduct(swimsuitExtreme);
 alice.orderProduct(bikiniRelax);
 fred.orderProduct(swimsuitActive);
 laura.orderProduct(bikiniExtreme);
 manny.orderProduct(childswimsuitRelax);
-maria.orderProduct(childswimsuitActive);
+maria.orderProduct(swimsuitActive);
 john.orderProduct(childswimsuitExtreme);
 // EXPLAIN AND ADD PRODUCTION PRODUCTS
 netsConversion.explainProcess();

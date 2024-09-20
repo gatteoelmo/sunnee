@@ -87,6 +87,8 @@ const swimsuitActive = new Product('Swimsuit Active', 2000, 'M', 'blue', true);
 const bikiniActive = new Product('Bikini Active', 2100, 'L', 'blue', true);
 const swimsuitExtreme = new Product('Swimsuit Extreme', 3000, 'M', 'blue', true);
 const bikiniExtreme = new Product('Bikini Extreme', 3100, 'S', 'blue', true);
+
+// NEXT SEASON
 const childswimsuitRelax = new Product('Swimsuit Extreme', 3000, 'M', 'blue', false);
 const childswimsuitActive = new Product('Swimsuit Extreme', 3000, 'M', 'blue', false);
 const childswimsuitExtreme = new Product('Swimsuit Extreme', 3000, 'M', 'blue', false);
@@ -102,7 +104,7 @@ const fred = new Customer('Fred', 'Flinstone', 'fred@gmail', 'Visa');
 const manny = new Customer('Manny', 'Machado', 'manny@gmail', 'Visa');
 
 // PRODUCTION PROCESS
-const netsConversion = new ProductionProcess('Nets Conversion', 'Fishing nets are collected and cleaned, then turned into plastic pellets. These pellets are used to make fabric, which is then used to create swimwear. This process helps reduce plastic waste and promotes environmental sustainability.', ['Swimsuit Relax', 'Swimsuit Active', 'Swimsuit Extreme']);
+const netsConversion = new ProductionProcess('Nets Conversion', 'Fishing nets are collected and cleaned, then turned into plastic pellets. These pellets are used to make fabric, which is then used to create swimwear. This process helps reduce plastic waste and promotes environmental sustainability.', ['Swetsuit Relax', 'Swetsuit Active', 'Swetsuit Extreme']);
 
 // ORDERS
 matteo.orderProduct(swimsuitExtreme);
@@ -110,7 +112,7 @@ alice.orderProduct(bikiniRelax);
 fred.orderProduct(swimsuitActive);
 laura.orderProduct(bikiniExtreme);
 manny.orderProduct(childswimsuitRelax);
-maria.orderProduct(childswimsuitActive);
+maria.orderProduct(swimsuitActive);
 john.orderProduct(childswimsuitExtreme);
 
 // EXPLAIN AND ADD PRODUCTION PRODUCTS
@@ -118,8 +120,6 @@ netsConversion.explainProcess();
 netsConversion.addProduct(childswimsuitRelax);
 netsConversion.addProduct(childswimsuitExtreme);
 netsConversion.addProduct(childswimsuitActive);
-
-
 
 
 
