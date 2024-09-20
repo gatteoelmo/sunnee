@@ -70,6 +70,7 @@ var laura = new Customer('Laura', 'Simpson', 'laurasimpson@gmail', 'Mastercard')
 var maria = new Customer('Maria', 'Gonzalez', 'maria@gmail', 'Mastercard');
 var fred = new Customer('Fred', 'Flinstone', 'fred@gmail', 'Visa');
 var manny = new Customer('Manny', 'Machado', 'manny@gmail', 'Visa');
+var alfred = new Customer('Alfred', 'Fernandez', 'alfred@gmail', 'Visa');
 // PRODUCTION PROCESS
 var netsConversion = new ProductionProcess('Nets Conversion', 'Fishing nets are collected and cleaned, then turned into plastic pellets. These pellets are used to make fabric, which is then used to create swimwear. This process helps reduce plastic waste and promotes environmental sustainability.', ['Swetsuit Relax', 'Swetsuit Active', 'Swetsuit Extreme']);
 // ORDERS
@@ -80,6 +81,8 @@ laura.orderProduct(bikiniExtreme);
 manny.orderProduct(childswimsuitRelax);
 maria.orderProduct(swimsuitActive);
 john.orderProduct(childswimsuitExtreme);
+alfred.orderProduct(bikiniActive);
+matteo.orderProduct(swimsuitRelax);
 // EXPLAIN AND ADD PRODUCTION PRODUCTS
 netsConversion.explainProcess();
 netsConversion.addProduct(childswimsuitRelax);
